@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    font-size: 8vmin;
+    color: red;
+    background-color: lightyellow;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    background-color: whitesmoke;
+    transform: scale(1.05);
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background-color: #333;
+    /* Change button color on hover */
+}
+
+#msg {
+    color: lightgoldenrodyellow;
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
